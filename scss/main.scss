@@ -12,6 +12,15 @@ body {
   background: #fff;
 }
 
+body::-webkit-scrollbar {
+  width: 0.8rem;
+  background: $dark-color;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(144, 144, 144);
+}
+
 a {
   text-decoration: none;
   color: $dark-color;
@@ -108,7 +117,6 @@ img {
       display: grid;
       grid-gap: 1.2rem;
       grid-template-columns: repeat(4, 1fr);
-      
 
       .fas {
         margin-top: 1rem;
@@ -123,7 +131,6 @@ img {
     .stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      
 
       li {
         line-height: 1.7;
@@ -163,7 +170,7 @@ img {
 
       &-step {
         position: absolute;
-        top:0;
+        top: 0;
         right: 0;
         font-size: 28px;
         background: $main-color;
@@ -193,7 +200,7 @@ img {
           transform: scale(1.05);
           color: set-text-color($light-color);
 
-          .process-step  {
+          .process-step {
             background: $dark-color;
             color: set-text-color($dark-color);
           }
@@ -208,12 +215,11 @@ img {
   &-a {
     .about-info {
       display: grid;
-      grid-template-areas: 
-        'bioimage bio bio'
-        'aw1 aw2 aw3';
+      grid-template-areas:
+        "bioimage bio bio"
+        "aw1 aw2 aw3";
       column-gap: 1.2rem;
       row-gap: 3rem;
-     
     }
 
     //Grid areas
@@ -234,7 +240,6 @@ img {
     .award {
       &-1 {
         grid-area: aw1;
-
       }
       &-2 {
         grid-area: aw2;
@@ -242,7 +247,7 @@ img {
       &-3 {
         grid-area: aw3;
       }
-      
+
       &-1 .fas,
       &-2 .fas,
       &-3 .fas {
@@ -316,10 +321,10 @@ img {
   &-a {
     .text-fields {
       display: grid;
-      grid-template-areas: 
-      'name email'
-      'subject phone'
-      'message message';
+      grid-template-areas:
+        "name email"
+        "subject phone"
+        "message message";
       grid-gap: 1.5rem;
       margin-bottom: 1.2rem;
 
@@ -345,12 +350,12 @@ img {
         border: 0.5px solid $medium-color;
       }
     }
-    button[type='submit'] {
+    button[type="submit"] {
       margin-top: 2rem;
       width: 50%;
     }
   }
-  
+
   &-b {
     .contact-info {
       display: grid;
@@ -372,30 +377,29 @@ img {
   background: $dark-color;
   color: #fff;
   height: 5rem;
-  
-  
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      height: 5rem;
-      align-items: center;
 
-      .social .fab{
-        margin-right: 1rem;
-        border: 2px white solid;
-        border-radius: 50%;
-        height: 20px;
-        width: 20px;
-        line-height: 20px;
-        text-align: center;
-        padding: 0.5rem;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
 
-        &:hover {
-          background: $main-color;
-        }
+    .social .fab {
+      margin-right: 1rem;
+      border: 2px white solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+
+      &:hover {
+        background: $main-color;
       }
     }
+  }
 }
 
 /* Import media queries */
-@import 'media'
+@import "media";

@@ -180,6 +180,13 @@ body {
   line-height: 1.6;
   background: #fff; }
 
+body::-webkit-scrollbar {
+  width: 0.8rem;
+  background: #333; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #909090; }
+
 a {
   text-decoration: none;
   color: #333; }
@@ -311,7 +318,7 @@ img {
 /* About Sections */
 #about-a .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
   column-gap: 1.2rem;
   row-gap: 3rem; }
 
@@ -383,7 +390,7 @@ img {
 /* Contact Page */
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-template-areas: "name email" "subject phone" "message message";
   grid-gap: 1.5rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
@@ -401,7 +408,7 @@ img {
     padding: 0.8rem 1rem;
     border: 0.5px solid #ccc; }
 
-#contact-a button[type='submit'] {
+#contact-a button[type="submit"] {
   margin-top: 2rem;
   width: 50%; }
 
